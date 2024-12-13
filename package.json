@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build:css": "tailwindcss -i ./views/style/style.css -o ./public/output.css --watch"
   },
   "author": "",
   "license": "ISC",
@@ -19,8 +20,11 @@
     "tailwindcss": "^3.4.16"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
+    "express-session": "^1.18.1",
     "mongodb": "^6.11.0",
     "mongoose": "^8.8.4",
     "morgan": "^1.10.0"
