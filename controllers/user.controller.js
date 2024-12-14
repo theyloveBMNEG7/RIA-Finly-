@@ -23,7 +23,7 @@ const signup = async (req, res) => {
 
 
 module.exports = {
-    login,
+    //login,
     signup,
-    deleteUser,
+    //deleteUser,
 };
